@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #d7d7d7;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #00213a;
+}
+
+
+.teste{
+    height: 1000px;
+}
+
+
+/* INICIAL */
+
+.containerInicial{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: #e4edf6; 
+    background: url(../img/fundoInicial.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -100;
+    position: fixed;
+}
+
+.containerInv{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000000;
+    z-index: -99;
+}
+
+.logo{
+    background: url(../img/logoOutlier1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 300px;
+}
+
+.textoInicio{
+    width: 50%;
+    height: 250px;
+    margin: 30px;
+    padding: 50px;
+    margin-top: 7%;
+    color: #1e2270;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.textoInicio h1{
+    font-size: 40px;
+    margin: 20px;
+    width: 80%;
+}
+
+.textoInicio h5{
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+.btnInicial{
+    align-items: center;
+    background-color: #1e2270;;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 20px;
+}
+  
+
+.btnInicial a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.btnInicial:hover {
+    background-color: #2f8ed6;   
+}
+  
+.textoInicio button:active {
+    transform: scale(0.9);
+}
+
+
+
+/* octogonos */
+
+/* .octs{
+    background-color: rebeccapurple;
+    width: 70%;
+    height: 100vh;
+    position: relative;
+} */
+
+/* .octClaro{
+    background: url(../img/5.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin: 10px;
+
+    width: 150%;
+    height: 100vh;
+} */
+
+/* img inicio */
+
+.imgInicio{
+    width: 50%;
+    background-color: #1e2270;
+    background: url(../img/imgInicial.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 60%;
+    margin: 30px;
+    padding: 50px;
+    margin-top: 150px;
+
+    
+    /* animation-name: movimentoImg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; */
+}
+
+/* @keyframes movimentoImg{
+    0%{
+        border-radius: 32% 68% 36% 64% / 50% 33% 70% 50%;
+    }
+
+    25%{
+        border-radius: 46% 54% 60% 40% / 36% 69% 25% 60% ;
+    }
+
+    50%{
+        border-radius: 65% 35% 65% 35% / 35% 60% 40% 65%;
+    }
+
+    100%{
+        border-radius: 32% 68% 36% 64% / 50% 33% 70% 50%;
+    }
+} */
