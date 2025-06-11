@@ -1,0 +1,33 @@
+body.dark{
+    background-color: #030125;
+    color: #fff;
+}
+
+.dark #menu{
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.dark #inicio{
+    background: linear-gradient(180deg, #1e2270 88%, #3a3a3a 100%);
+}
+
+.dark .sobreNos h1{
+    margin: auto;
+    color: #1c399a;
+    font-size: 40px;
+    text-shadow: 1px 1px 5px #1e2270,
+                 2px 2px 20px #070929;
+}
+
+.dark #ballSobreNos{
+    /* background-color: #183153; */
+    color: #ffffff;
+    /* box-shadow: 1px 1px 10px 1px #000000ee;
+    text-shadow: 1px 1px 10px #000000; */
+}
+  
+.dark .sobreNos h3{
+    color: #2d5aed;
+    text-shadow: 1px 1px 10px #000000;
+}
+

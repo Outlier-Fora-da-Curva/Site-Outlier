@@ -1,0 +1,343 @@
+.tituloPadrao {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #1c399a;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #8a8ed9;
+    cursor: pointer;
+}
+
+/************************************************************************************/
+.cardsEquipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+    justify-content: center;
+}
+
+.slide-group {
+    display: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.slides {
+    flex: 1 1 200px;
+    max-width: 200px;
+    min-width: 180px;
+}
+
+
+.titEquipe {
+    width: 40%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.perfil {
+    background-color: #1c399a;
+    border-bottom-left-radius: 20%;
+    height: 42%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circulo {
+    background-color: #d2d2d2;
+    border-radius: 50%;
+    width: 94px;
+    height: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+/* Carrossel de apresentação da equipe */
+.slides {
+    border-radius: 12%;
+    width: 200px;
+    height: 285px;
+    color:  #04004c;
+    letter-spacing: 0.8px;
+    background-color: #d2d2d2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 2%;
+    box-shadow: 6px 12px 27px 0px rgba(0,0,0,0.72);
+    box-sizing: border-box;
+    transition: all 0.6s;
+    
+}
+
+
+.slides:hover {
+    transform: scale(1.08);
+}
+
+.circulo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 3.5px #1c399a;
+}
+
+.infoEquipe img{
+    display: inline-block;
+    align-items: center;
+}
+
+.infoEquipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 25%;
+    background-color: #d2d2d2;
+    z-index: 1;
+    margin-top: -30px;
+    height: 100px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.quadrado {
+    background-color: #1c399a;
+    width: 50px;
+    height: 30px;
+    margin-left: 75%;
+    z-index: 0;
+    max-width: 50px;
+    min-width: 30px;
+}
+
+.nomeEquipe {
+    color: #1c399a;
+    margin: 50px 0 2px;
+    font-size: 20px;
+}
+
+.cargo {
+
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #04004c;
+    font-size: 14px;
+    margin: 0 0 6px;
+}
+/**************************************************************************************/
+.controladores {
+    justify-content: center;
+    display: flex;
+    
+}
+
+/* Botão de passagem dos slides*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    justify-content: center;
+    margin-top: -250px;
+    color: #1c399a;
+    text-shadow: 2px 2px 2px #8a8ed9;
+    
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.setas {
+    width: 100%;
+}
+
+/**************************************************************************************/
+/* Redes sociais */
+ul {
+    list-style: none;
+}
+  
+.redesSociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.redesSociais .icon-content {
+    margin: 0 6px;
+    position: relative;
+}
+.redesSociais .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 20%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 10px;
+    transition: all 0.3s ease;
+}
+  
+.redesSociais .icon-content:hover {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.redesSociais .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    color: #d2d2d2;
+    background-color: #1c399a;
+    border-radius: 50%;
+    border: 2px solid #1c399a;
+    transition: all 0.3s ease-in-out;
+}
+
+.redesSociais .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+  
+.redesSociais .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+  
+.redesSociais .icon-content a:hover {
+    color: #1c399a;
+}
+  
+.redesSociais .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #d2d2d2;
+    transition: all 0.3s ease-in-out;
+}
+
+.redesSociais .icon-content a:hover .filled {
+    height: 100%;
+}
+
+/* modo escuro */
+.dark  .perfil {
+    background-color: #1e2270;
+    
+}
+
+.dark .circulo {
+    background-color: #1E1E2D;
+}
+
+.dark .slides {
+    color:  #04004c;
+    background-color: #1E1E2D;
+    
+}
+
+.dark .circulo img {
+    border: solid 3.5px #1e2270;
+}
+
+
+.dark .infoEquipe {
+    background-color: #1E1E2D;
+
+}
+
+
+.dark .quadrado {
+    background-color: #1e2270;
+
+}
+
+.dark .nomeEquipe {
+    color: #5477eb;
+}
+
+.dark .cargo {
+    color: #95cffd;
+}
+
+/* Botão de passagem dos slides*/
+.dark .prev, .next {
+    color: #1e2270;
+    text-shadow: 2px 2px 2px #8a8ed9;
+}
+/**************************************************************************************/
+/* Redes sociais */
+.dark .redesSociais .icon-content .tooltip {
+    color: #211e2b;
+}
+
+.dark .redesSociais .icon-content a {
+    color: #211e2b;
+    background-color: #5477eb;
+    border: 2px solid #5477eb;
+}
+
+.dark .redesSociais .icon-content a:hover {
+    color: #5477eb;
+}
+  
+.dark .redesSociais .icon-content a .filled {
+    background-color: #211e2b;
+}
+
+/*****************************************************************/
+/* RESPOSIVIDADE - Fale Conosco */
+
+/* Responsividade para tablets (até 1024px) 
+@media (max-width: 1024px) {
+  .quadrado {
+    margin-left: 80%;
+}
+}
+
+/* Responsividade para celulares (até 768px) 
+@media (max-width: 768px) {
+    .quadrado {
+        margin-left: 80%;
+    }
+}

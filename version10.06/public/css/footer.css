@@ -1,0 +1,237 @@
+body {
+  background-color: #ffffff;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer img {
+  width: 315px;
+  
+}
+  
+footer {
+    padding: 10px;
+    border: 0; 
+    outline: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    background-color: rgb(21, 21, 21);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#nome-footer {
+    font-size: 15px;
+    color: #3a3a3a;
+    text-align: center;
+}
+
+.footerCont {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+
+}
+
+.tituloFooter {
+  color: #ffffff;
+  border-left: solid 6px #1c399a;
+  padding-left: 8px;
+  margin-bottom: 8%;
+  font-size: 25px;
+}
+
+.parte li a {
+  color: #3a3a3a;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.parte li a:hover {
+  color: #1c399a;
+}
+
+.parte {
+  width: 25%;
+  padding: 10px;
+}
+
+.parte3 {
+  width: 15%;
+}
+
+.footerCont {
+  border-bottom: solid 2px #3a3a3a;
+  
+}
+
+/* Redes sociais */
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+/* instagram */
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+/* github */
+.containerTwo:hover {
+  background-color: #000;
+  transition-duration: 0.3s;
+}
+
+/* linkdin */
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navList1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navList1, .navItem1 {
+  display: block !important;
+}
+
+/* Responsividade */
+/* Responsividade para tablets (até 1024px) */
+@media screen and (max-width: 1024px) {
+  .footerCont {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .parte {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  footer img {
+    width: 250px;
+  }
+
+  .tituloFooter {
+    font-size: 22px;
+    margin-bottom: 5%;
+  }
+
+  .parte li a {
+    font-size: 15px;
+  }
+
+  .card {
+    gap: 15px;
+    padding: 20px 20px;
+  }
+}
+
+/* Responsividade para celulares (até 768px) */
+@media screen and (max-width: 768px) {
+  .footerCont {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .parte {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  footer img {
+    width: 200px;
+  }
+
+  .tituloFooter {
+    font-size: 20px;
+    padding-left: 6px;
+  }
+
+  .parte li a {
+    font-size: 14px;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .socialContainer {
+    width: 45px;
+    height: 45px;
+  }
+
+  .socialSvg {
+    width: 15px;
+  }
+
+  #nome-footer {
+    font-size: 14px;
+  }
+}

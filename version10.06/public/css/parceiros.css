@@ -1,0 +1,64 @@
+/* Carrossel infinito */
+.carrossel {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    margin-left: 8%;
+    margin-right: 8%;
+    justify-content: right;
+}
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+}
+  
+.parceiros .slider {
+    background: #e6e6e6;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+  
+.dark .parceiros .slider {
+    background: #2d2d3e;
+}
+
+.parceiros .slider::before,
+.parceiros .slider::after {
+    background: transparent;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  
+.parceiros .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+  
+.parceiros .slider::before {
+    left: 0;
+    top: 0;
+}
+  
+.parceiros .slider .slide-track {
+    animation: scroll 70s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+  
+.parceiros .slider .slide {
+    height: 100px;
+    width: 250px;
+    margin: 0px 20px;
+}

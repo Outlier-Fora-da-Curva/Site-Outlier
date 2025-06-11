@@ -1,0 +1,68 @@
+body.dark{
+    background-color: #151521;
+    color: #fff;
+}
+
+
+/* MENU */
+
+.dark #menu{ 
+    background: #151521d1;
+    box-shadow: 0px 6px 32px 0 rgba(41, 41, 42, 0.474);
+}
+
+.dark #menu .logo{
+  background: url(../img/4.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dark .containerInicial{
+    background: #1c399a;
+}
+
+.dark #menu a{
+    color: #56b0f5;
+    text-shadow: 0px 0px 15px #00213a9a;
+}
+
+.dark #menu a:hover {
+  color: #95cffd;
+  text-shadow: 0 0 20px #56b0f5;
+}
+
+.dark #menu a::after {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 3%,  #95cefd99 68%, #95cffd 97%);
+}
+
+.dark .iconMobile img{
+  src: url(../img/menu-abertoDark.png);
+}
+
+/* INICIAL */
+
+.dark #wave{
+    background: url(../img/waveDark.png);
+}
+
+.dark .textoInicio{
+    color: #fff;
+}
+
+/* PROJETOS */
+
+.dark .cardProjeto{
+    border: 2px solid #383838;
+}
+
+.dark .tituloProjetos{
+    color: #2f8ed6;
+}
+
+/* SOBRE NÓS */
+
+
+.dark .cardValores {
+  box-shadow: 0 6px 10px #1c1c1c;
+}

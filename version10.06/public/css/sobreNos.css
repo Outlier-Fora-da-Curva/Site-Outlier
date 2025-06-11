@@ -1,0 +1,146 @@
+#sobreNos{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    scroll-margin-top: 90px; /* define o espaço acima ao rolar */
+}
+
+
+.sobreNosContainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.sobreNosContainer1 .img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sobreNosContainer1 .img img{
+    width: 70%;
+    height: 70%;
+    animation: bordasFlutuantes 10s ease-in-out infinite;
+    margin: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: #00213aa7 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+}
+
+@keyframes bordasFlutuantes{
+    0%{
+        border-radius: 36% 64% 64% 36% / 58% 39% 61% 42%;
+    }
+
+    50%{
+        border-radius: 58% 42% 74% 26% / 41% 61% 39% 59%;
+    }
+
+    100%{
+        border-radius: 36% 64% 64% 36% / 58% 39% 61% 42%;
+    }
+}
+
+.sobreNosContainer1 .introducao{
+    width: 60%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.sobreNosContainer1 .introducao h1{
+    padding: 5px;
+    text-shadow: 1px 1px 5px #00000042; 
+    font-size: 40px;
+    color: #2f8ed6;
+}
+
+.sobreNosContainer1 .introducao p{
+    padding: 5px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* CARDS */
+
+.sobreNosContainer2{
+    width: 85%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cardValores {
+  background: #1c399a;
+  width: 280px;
+  padding: 25px 20px;
+  border: 2px solid #1e2270;
+  box-shadow: 0 6px 10px rgb(112, 112, 112);
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  flex: 1 0 280px;
+}
+
+.cardValores:hover {
+  transform: translateY(-10px);
+}
+
+.cardValores .icon{
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #1e2270;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.cardValores .icon1{
+    background: url(../img/missao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.cardValores .icon2{
+    background: url(../img/valor.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.cardValores .icon3{
+    background: url(../img/visao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.cardValores h3 {
+  display: block;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.cardValores span {
+  display: block;
+  font-size: 14px;
+}
